@@ -6,4 +6,8 @@ df = pd.DataFrame({
 })
 
 print(df)
-print(df.describe())
+# print(df.describe())
+
+# score 列を追加して、テスト点数を入れる
+df["score"] = [80, 90, 85]
+print(df)   
