@@ -6,11 +6,11 @@ df = pd.DataFrame({
     "income": [300, 350, 500, 650, 800]
 })
 
-
-
-
 # study_time 列を追加して、他の列との相関を見る
 df["study_time"] = [1, 2, 2, 3, 5]
+
+
+print(df.corr())
 
 # ageとincomeの相関をmatplotlibで可視化
 plt.scatter(df["age"], df["income"])
@@ -23,4 +23,3 @@ plt.show()
 
 
 
-print(df.corr())
